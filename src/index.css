@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-forest: #173D32;
+  --color-forest-dark: #10251F;
+  --color-forest-surface: #173D32;
+  --color-forest-card: #15362C;
+  --color-forest-elevated: #1E483C;
+  --color-forest-hover: #225244;
+  --color-forest-border: #274C3F;
+  
+  --color-cream: #F5F0E6;
+  --color-cream-light: #FBF8F2;
+  --color-cream-surface: #FFFFFF;
+  --color-cream-inset: #F4EFE6;
+  --color-cream-hover: #ECE4D6;
+  --color-cream-border: #DDD5C7;
+
+  --color-copper: #BD805B;
+  --color-copper-light: #D4956F;
+  --color-copper-hover: #A56C48;
+
+  --color-sage: #A9B9A2;
+  --color-sage-light: #C2CEC0;
+  --color-sage-dark: #6C7D69;
+}
+
+:root {
+  --canvas-bg: #F5F0E6;
+  --nav-bg: rgba(245, 240, 230, 0.96);
+  --section-alt-sage: #E8EFE6;
+  --section-alt-neutral: #FAF7F0;
+  --card-bg: #FFFFFF;
+  --card-inset: #F4EFE6;
+  --card-hover: #ECE4D6;
+  --card-elevated: #FFFFFF;
+  --text-main: #173D32;
+  --text-body: #1E332A;
+  --text-sub: #45574F;
+  --text-muted: #5E7268;
+  --brand-primary: #173D32;
+  --accent-copper: #BD805B;
+  --accent-sage: #A9B9A2;
+  --border-card: #DDD5C7;
+  --border-subtle: rgba(221, 213, 199, 0.8);
+  --btn-primary-bg: #173D32;
+  --btn-primary-text: #F5F0E6;
+  --btn-primary-hover: #10251F;
+}
+
+.dark {
+  --canvas-bg: #10251F;
+  --nav-bg: rgba(13, 32, 26, 0.98);
+  --section-alt-dark-a: #0B1B16;
+  --section-alt-dark-b: #0E221C;
+  --card-bg: #173D32;
+  --card-inset: #112921;
+  --card-hover: #225244;
+  --card-elevated: #1E483C;
+  --text-main: #FAF6EF;
+  --text-body: #F0EAE1;
+  --text-sub: #A9B9A2;
+  --text-muted: #8E9F88;
+  --brand-primary: #FAF6EF;
+  --accent-copper: #D4956F;
+  --accent-sage: #A9B9A2;
+  --border-card: #274C3F;
+  --border-subtle: rgba(39, 76, 63, 0.8);
+  --btn-primary-bg: #1E483C;
+  --btn-primary-text: #FAF6EF;
+  --btn-primary-hover: #265B4C;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: light dark;
+  }
+
+  body {
+    background-color: var(--canvas-bg);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+
+  .font-sans {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom scrollbar styling for gallery categories */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Restrained transitions & reduced motion compliance */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

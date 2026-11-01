@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F2"/>
+      <stop offset="60%" stop-color="#F2EBE1"/>
+      <stop offset="100%" stop-color="#E5DDD0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="1000" fill="url(#bgGrad)"/>
+
+  <!-- Museum Matboard Border -->
+  <rect x="36" y="36" width="728" height="928" fill="none" stroke="#D1C7B7" stroke-width="2"/>
+  <rect x="48" y="48" width="704" height="904" fill="none" stroke="#C59B27" stroke-opacity="0.4" stroke-width="1.5"/>
+
+  <!-- Corner Ornamentation -->
+  <path d="M 40 60 L 60 40 M 760 60 L 740 40 M 40 940 L 60 960 M 760 940 L 740 960" stroke="#C59B27" stroke-width="1.5"/>
+
+  <!-- Demonstration Banner Tag -->
+  <g transform="translate(400, 110)">
+    <rect x="-140" y="-18" width="280" height="36" rx="4" fill="#FFFFFF" fill-opacity="0.95" stroke="#D1C7B7" stroke-width="1"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#755717" letter-spacing="2">
+      PORTFOLIO DEMONSTRATION
+    </text>
+  </g>
+
+  <!-- Center Artwork Motif -->
+  
+      <g transform="translate(400, 460)">
+        <polygon points="0,-180 150,-50 100,140 -100,140 -150,-50" fill="#456E5E" fill-opacity="0.25" stroke="#C59B27" stroke-width="2"/>
+        <polygon points="0,-120 100,-30 65,90 -65,90 -100,-30" fill="#173D32" fill-opacity="0.35" stroke="#C59B27" stroke-width="2"/>
+        <circle cx="0" cy="0" r="45" fill="#C59B27" fill-opacity="0.8"/>
+        <line x1="-180" y1="0" x2="180" y2="0" stroke="#C59B27" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <line x1="0" y1="-180" x2="0" y2="180" stroke="#C59B27" stroke-width="1.5" stroke-dasharray="6 4"/>
+      </g>
+    
+
+  <!-- Artwork Accession Metadata -->
+  <g transform="translate(400, 780)">
+    <line x1="-180" y1="0" x2="180" y2="0" stroke="#D1C7B7" stroke-width="1"/>
+    <text x="0" y="40" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="26" font-weight="600" fill="#173D32">
+      Geometric Modernist Study
+    </text>
+    <text x="0" y="70" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="600" fill="#C59B27" letter-spacing="2">
+      ACRYLIC ON STRETCHED CANVAS
+    </text>
+    <text x="0" y="98" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="400" fill="#6B5949" letter-spacing="1">
+      Atelier Demo · Generic Creative Study
+    </text>
+  </g>
+</svg>
