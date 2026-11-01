@@ -19,6 +19,11 @@ This project is intended for educational and portfolio purposes. Demonstration a
 
 ---
 
+## 🖥️ Website Preview
+
+![Atelier Demo Homepage](screenshots/homepage.png)
+
+
 ## ✨ Key Features
 
 - **Interactive Artwork Gallery:** Browse demonstration artwork across multiple creative mediums and artistic styles.
