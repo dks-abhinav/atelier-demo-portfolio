@@ -104,7 +104,7 @@ atelier-demo-portfolio/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/atelier-demo-portfolio.git
+git clone https://github.com/dks-abhinav/atelier-demo-portfolio.git
 ```
 
 ### 2. Navigate to the Project Directory
